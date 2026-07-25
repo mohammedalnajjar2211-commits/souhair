@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>SOUHAIR BEAUTY 🫆</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 
 <style>
 
@@ -14,16 +18,23 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Cairo',sans-serif;
 }
 
 body{
+
 min-height:100vh;
+
 display:flex;
+
 justify-content:center;
+
 align-items:center;
+
 padding:30px;
-background:linear-gradient(180deg,#ffffff 0%,#efefef 60%,#d9d9d9 100%);
+
+background:linear-gradient(180deg,#ffffff 0%,#efefef 55%,#d7d7d7 100%);
+
 }
 
 .card{
@@ -31,19 +42,20 @@ background:linear-gradient(180deg,#ffffff 0%,#efefef 60%,#d9d9d9 100%);
 width:100%;
 max-width:430px;
 
-padding:35px 25px;
-
-border-radius:30px;
+padding:35px 28px;
 
 background:rgba(255,255,255,.45);
 
 backdrop-filter:blur(18px);
+
+border-radius:30px;
 
 box-shadow:0 15px 40px rgba(0,0,0,.12);
 
 text-align:center;
 
 animation:fade .8s ease;
+
 }
 
 .avatar{
@@ -55,77 +67,120 @@ border-radius:50%;
 
 object-fit:cover;
 
+border:5px solid #fff;
+
+box-shadow:0 12px 30px rgba(0,0,0,.15);
+
 margin-bottom:18px;
 
-border:5px solid white;
-
-box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 
 h1{
 
-font-size:28px;
+font-size:30px;
+
+color:#111;
+
+margin-bottom:8px;
+
+}
+
+.subtitle{
+
+font-size:15px;
+
+color:#666;
+
+line-height:1.9;
 
 margin-bottom:30px;
 
-color:#111;
+font-weight:600;
+
 }
 
 .btn{
 
 display:flex;
 
-align-items:center;
-
 justify-content:center;
+
+align-items:center;
 
 gap:12px;
 
 width:100%;
 
-margin:15px 0;
+margin:14px 0;
 
 padding:18px;
 
-border-radius:999px;
-
 background:#111;
 
-color:white;
-
-font-size:18px;
+color:#fff;
 
 text-decoration:none;
 
+font-size:18px;
+
+font-weight:700;
+
+border-radius:999px;
+
 transition:.3s;
 
-box-shadow:0 10px 20px rgba(0,0,0,.15);
+box-shadow:0 10px 20px rgba(0,0,0,.18);
+
 }
 
 .btn:hover{
 
+background:#2c2c2c;
+
 transform:translateY(-4px);
 
-background:#2b2b2b;
-
 box-shadow:0 15px 30px rgba(0,0,0,.25);
+
 }
 
 .btn i{
 
 font-size:20px;
+
+}
+
+.footer{
+
+margin-top:35px;
+
+padding-top:18px;
+
+border-top:1px solid rgba(0,0,0,.08);
+
+font-size:13px;
+
+color:#777;
+
+line-height:1.8;
+
 }
 
 @keyframes fade{
 
 from{
+
 opacity:0;
+
 transform:translateY(25px);
+
 }
 
 to{
+
 opacity:1;
+
 transform:translateY(0);
+
 }
 
 }
@@ -145,6 +200,10 @@ src="https://ugc.production.linktr.ee/e2b9cf0f-c613-4f8c-8101-d99514302e57_Whats
 alt="SOUHAIR BEAUTY">
 
 <h1>SOUHAIR BEAUTY 🫆</h1>
+
+<p class="subtitle">
+🌸 مرحبًا بكِ في عالم Souhair Beauty، حيث نجمع بين الجودة والأناقة لنمنحك تجربة تسوق مميزة بكل حب. ✨
+</p>
 
 <a href="#" class="btn">
 <i class="fa-solid fa-cart-shopping"></i>
@@ -166,7 +225,13 @@ alt="SOUHAIR BEAUTY">
 زر رقم 4
 </a>
 
+<div class="footer">
+© 2026 SOUHAIR BEAUTY<br>
+جميع الحقوق محفوظة.
+</div>
+
 </main>
 
 </body>
+
 </html>
