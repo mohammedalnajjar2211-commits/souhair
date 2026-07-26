@@ -16,7 +16,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <style>
 
-    /* شريط الأخبار */
+/* شريط الإعلانات */
 
 .news-bar{
 
@@ -24,55 +24,55 @@ width:100%;
 
 margin:18px 0 22px;
 
-background:linear-gradient(90deg,#111,#2b2b2b);
+overflow:hidden;
+
+background:rgba(255,255,255,.45);
+
+backdrop-filter:blur(10px);
+
+border:1px solid rgba(255,255,255,.55);
 
 border-radius:999px;
 
-overflow:hidden;
-
-box-shadow:0 8px 20px rgba(0,0,0,.15);
+box-shadow:0 8px 18px rgba(0,0,0,.08);
 
 }
 
 .news-track{
 
-display:flex;
-
-align-items:center;
+display:inline-block;
 
 white-space:nowrap;
 
-padding:12px 0;
-
-animation:marquee 14s linear infinite;
-
-color:#fff;
+padding:13px 0;
 
 font-size:15px;
 
 font-weight:700;
 
-letter-spacing:.3px;
+color:#111;
+
+animation:marqueeRTL 12s linear infinite;
 
 }
 
 .news-track span{
 
-padding-inline:40px;
+padding-inline:60px;
 
 }
 
-@keyframes marquee{
+@keyframes marqueeRTL{
 
 0%{
 
-transform:translateX(100%);
+transform:translateX(-100%);
 
 }
 
 100%{
 
-transform:translateX(-100%);
+transform:translateX(100%);
 
 }
 
@@ -362,17 +362,10 @@ alt="SOUHAIR BEAUTY">
 
 
 <div class="news-bar">
-
-<div class="news-track">
-
-<span>🚚 متوفر شحن سريع إلى جميع محافظات العراق 🇮🇶</span>
-
-<span>✨ الدفع عند الاستلام متوفر</span>
-
-<span>🌿 منتج أصلي 100%</span>
-
-</div>
-
+    <div class="news-track">
+        <span>🚚 متوفر شحن سريع لجميع محافظات العراق 🇮🇶</span>
+        <span>🚚 متوفر شحن سريع لجميع محافظات العراق 🇮🇶</span>
+    </div>
 </div>
 
     
