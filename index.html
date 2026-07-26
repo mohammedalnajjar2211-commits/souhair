@@ -16,7 +16,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <style>
 
-/* شريط الأخبار الاحترافي */
+/* شريط الإعلانات */
 
 .news-bar{
 
@@ -28,23 +28,25 @@ overflow:hidden;
 
 background:rgba(255,255,255,.45);
 
-backdrop-filter:blur(10px);
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,.6);
 
 border-radius:999px;
 
-border:1px solid rgba(255,255,255,.6);
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+padding:12px 0;
+
+position:relative;
 
 }
 
 .news-track{
 
-display:flex;
-
-direction:ltr;
+display:inline-block;
 
 white-space:nowrap;
-
-padding:12px 0;
 
 font-size:15px;
 
@@ -52,23 +54,23 @@ font-weight:700;
 
 color:#111;
 
-animation:news 16s linear infinite;
+padding-left:100%;
 
-will-change:transform;
-
-}
-
-@keyframes news{
-
-from{
-
-transform:translateX(100%);
+animation:marquee 10s linear infinite;
 
 }
 
-to{
+@keyframes marquee{
 
-transform:translateX(-100%);
+0%{
+
+transform:translateX(0);
+
+}
+
+100%{
+
+transform:translateX(-200%);
 
 }
 
@@ -364,7 +366,6 @@ alt="SOUHAIR BEAUTY">
 <div class="news-bar">
     <div class="news-track">
 
-        <span class="news-text">
         <span>🌿 منتج أصلي 100%</span>
         <span>🚚 متوفر شحن سريع إلى جميع محافظات العراق 🇮🇶</span>
         <span>✨ الدفع عند الاستلام متوفر</span>
