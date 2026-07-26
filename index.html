@@ -19,60 +19,34 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 /* شريط الإعلانات */
 
 .news-bar{
-
-width:100%;
-
-margin:18px 0 22px;
-
-overflow:hidden;
-
-background:rgba(255,255,255,.45);
-
-backdrop-filter:blur(12px);
-
-border:1px solid rgba(255,255,255,.6);
-
-border-radius:999px;
-
-box-shadow:0 8px 18px rgba(0,0,0,.08);
-
-padding:12px 0;
-
-position:relative;
-
+    width:100%;
+    overflow:hidden;
+    background:rgba(255,255,255,.45);
+    border-radius:999px;
+    padding:12px 0;
+    position:relative;
 }
 
 .news-track{
-
-display:inline-block;
-
-white-space:nowrap;
-
-font-size:15px;
-
-font-weight:700;
-
-color:#111;
-
-padding-left:100%;
-
-animation:marquee 10s linear infinite;
-
+    position:relative;
+    right:-100%;
+    white-space:nowrap;
+    direction:rtl;
+    font-size:15px;
+    font-weight:700;
+    color:#111;
+    animation:news 16s linear infinite;
 }
 
-@keyframes marquee{
+@keyframes news{
 
-0%{
+    from{
+        right:-100%;
+    }
 
-transform:translateX(0);
-
-}
-
-100%{
-
-transform:translateX(-200%);
-
-}
+    to{
+        right:100%;
+    }
 
 }
 
