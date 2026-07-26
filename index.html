@@ -16,6 +16,68 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <style>
 
+    /* شريط الأخبار */
+
+.news-bar{
+
+width:100%;
+
+margin:18px 0 22px;
+
+background:linear-gradient(90deg,#111,#2b2b2b);
+
+border-radius:999px;
+
+overflow:hidden;
+
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.news-track{
+
+display:flex;
+
+align-items:center;
+
+white-space:nowrap;
+
+padding:12px 0;
+
+animation:marquee 14s linear infinite;
+
+color:#fff;
+
+font-size:15px;
+
+font-weight:700;
+
+letter-spacing:.3px;
+
+}
+
+.news-track span{
+
+padding-inline:40px;
+
+}
+
+@keyframes marquee{
+
+0%{
+
+transform:translateX(100%);
+
+}
+
+100%{
+
+transform:translateX(-100%);
+
+}
+
+}
+    
 *{
 margin:0;
 padding:0;
@@ -298,6 +360,22 @@ alt="SOUHAIR BEAUTY">
 🌸 زيت نمو الشعر الفاخر بتركيبة زيوت طبيعية %100 يغذي الفروة بعمق، ويساعد على إعادة إنبات الشعر وتقوية البصيلات الضعيفة، وزيادة الكثافة والطول ✨
 </p>
 
+
+<div class="news-bar">
+
+<div class="news-track">
+
+<span>🚚 متوفر شحن سريع إلى جميع محافظات العراق 🇮🇶</span>
+
+<span>✨ الدفع عند الاستلام متوفر</span>
+
+<span>🌿 منتج أصلي 100%</span>
+
+</div>
+
+</div>
+
+    
 <a href="https://api.whatsapp.com/send/?phone=9647832391400&text=%D8%A3%D8%B1%D9%8A%D8%AF+%D8%B4%D8%B1%D8%A7%D8%A1+%D9%85%D9%86%D8%AA%D8%AC+%D8%A7%D9%84%D8%B4%D8%B9%D8%B1&type=phone_number&app_absent=0" class="btn">
 <i class="fa-solid fa-cart-shopping"></i>
 اطلب المنتج الآن
