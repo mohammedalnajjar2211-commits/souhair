@@ -28,13 +28,11 @@ overflow:hidden;
 
 background:rgba(255,255,255,.45);
 
-backdrop-filter:blur(12px);
+backdrop-filter:blur(10px);
 
 border-radius:999px;
 
 border:1px solid rgba(255,255,255,.6);
-
-box-shadow:0 8px 18px rgba(0,0,0,.08);
 
 }
 
@@ -52,25 +50,21 @@ font-weight:700;
 
 color:#111;
 
-animation:news 18s linear infinite;
+animation:news 16s linear infinite;
 
-}
-
-.news-track span{
-
-padding-inline:40px;
+will-change:transform;
 
 }
 
 @keyframes news{
 
-0%{
+from{
 
 transform:translateX(100%);
 
 }
 
-100%{
+to{
 
 transform:translateX(-100%);
 
